@@ -1,0 +1,14 @@
+// abstracts 
+@import 'abstracts/variables.scss';
+@import 'abstracts/mixin.scss';
+@import 'abstracts/placeholders.scss';
+
+// components
+@import 'components/button.scss';
+
+//layout
+@import 'layout/page.scss';
+@import 'layout/header.scss';
+
+//pages
+@import 'pages/home.scss';

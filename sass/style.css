@@ -1,0 +1,110 @@
+.btn {
+  height: 50px;
+  width: 218px;
+  border-radius: 25px;
+  border: 0;
+  background: var(--button-gradient, linear-gradient(175deg, #9356DC 0%, #FF79DA 100%));
+  /* Shadow/Button */
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  color: var(--white, #FFF);
+  text-align: center;
+  /* Button */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.btn:hover {
+  border-radius: 25px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 63px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.logo img {
+  height: 36px;
+}
+
+.location {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  background-color: #EAEAEA;
+  color: #353535;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.section-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 39px 0 57px 0;
+  background: var(--background, #F6F6F6);
+  gap: 27px;
+}
+.section-info .section-title {
+  width: 100%;
+}
+.section-info .section-title .info-title {
+  color: #000;
+  text-align: center;
+  /* Section Title */
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 0 50px;
+  margin: 0;
+}
+.section-info .section-title .info-subtitle {
+  color: var(--grey, #353535);
+  text-align: center;
+  /* Paragraph */
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding: 0 30px;
+  margin: 0;
+}
+
+.section-fonction {
+  padding: 58px 20px;
+}
+.section-fonction .steps .steps-number {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-fonction .steps .steps-name {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-radius: 20px;
+  background: var(--Background, #F6F6F6);
+  /* Shadow/Instructions */
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,69 @@
+
+
+.section-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding:  39px 0 57px 0;
+    background: var(--background, #F6F6F6);
+    gap: 27px;
+    .section-title {
+        width: 100%;
+        .info-title {
+            color: #000;
+            text-align: center;
+        
+            /* Section Title */
+            font-family: Roboto;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        
+            padding: 0 50px;
+            margin: 0;
+        }
+        .info-subtitle {
+            color: var(--grey, #353535);
+            text-align: center;
+        
+            /* Paragraph */
+            font-family: Roboto;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        
+            padding: 0 30px;
+            margin: 0;
+        }
+    }
+}
+
+.section-fonction{
+    padding: 58px 20px;
+    .steps {
+        .steps-number {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background-color: $primary;
+            color: $white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .steps-name {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+
+            border-radius: 20px;
+            background: var(--Background, #F6F6F6);
+
+            /* Shadow/Instructions */
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        }
+    }
+}   
