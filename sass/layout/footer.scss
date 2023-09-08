@@ -5,23 +5,31 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    .footer-links{
-        display: flex;
-        flex-direction: column;
-        gap: 7px;
+
+    @include respond-to ('large') {
+        flex-direction: row-reverse;
+        align-items: end;
     }
     h2{
         color: var(--White, #FFF);
         font-family: Shrikhand;
     }
-    a {
+    .footer-links{
         display: flex;
-        flex-direction: row;
-        gap: 11px;
-
-        color: #FFF;
-        font-family: Roboto;
-        font-size: 16px;
-        text-decoration: none;
-    }
+        flex-direction: column;
+        gap: 7px;
+        @include respond-to ('large') {
+            flex-direction: row;
+        }
+        a {
+            display: flex;
+            flex-direction: row;
+            gap: 11px;
+    
+            color: #FFF;
+            font-family: Roboto;
+            font-size: 16px;
+            text-decoration: none;
+        }
+    }    
 }

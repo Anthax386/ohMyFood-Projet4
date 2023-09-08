@@ -51,16 +51,27 @@ footer {
   flex-direction: column;
   gap: 16px;
 }
-footer .footer-links {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
+@media (min-width: 1024px) {
+  footer {
+    flex-direction: row-reverse;
+    align-items: end;
+  }
 }
 footer h2 {
   color: var(--White, #FFF);
   font-family: Shrikhand;
 }
-footer a {
+footer .footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+@media (min-width: 1024px) {
+  footer .footer-links {
+    flex-direction: row;
+  }
+}
+footer .footer-links a {
   display: flex;
   flex-direction: row;
   gap: 11px;
@@ -110,6 +121,13 @@ footer a {
   padding: 0 50px;
   margin: 0;
 }
+@media (min-width: 1024px) {
+  .section-info .section-title .info-title {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+}
 .section-info .section-title .info-subtitle {
   color: var(--grey, #353535);
   text-align: center;
@@ -129,10 +147,27 @@ footer a {
   gap: 25px;
   padding: 58px 20px;
 }
-.section-fonction .steps {
+@media (min-width: 1024px) {
+  .section-fonction {
+    padding: 50px 180px;
+  }
+}
+@media (min-width: 1024px) {
+  .section-fonction .steps {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+  }
+}
+.section-fonction .steps .step {
   position: relative;
 }
-.section-fonction .steps .steps-number {
+@media (min-width: 1024px) {
+  .section-fonction .steps .step {
+    width: 33%;
+  }
+}
+.section-fonction .steps .step .steps-number {
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -145,7 +180,7 @@ footer a {
   top: 24px;
   left: -12px;
 }
-.section-fonction .steps .steps-name {
+.section-fonction .steps .step .steps-name {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -160,21 +195,39 @@ footer a {
   font-family: Roboto;
   font-size: 16px;
 }
-.section-fonction .steps .steps-name i {
+.section-fonction .steps .step .steps-name i {
   color: #7E7E7E;
 }
-.section-fonction .steps .steps-name .primary-color {
+.section-fonction .steps .step .steps-name .primary-color {
   color: #9356DC;
 }
 
-.restaurants {
+.section-restaurants {
   display: flex;
   flex-direction: column;
   padding: 60px 18px;
   gap: 18px;
   background: #F6F6F6;
 }
-.restaurants .restaurant {
+@media (min-width: 1024px) {
+  .section-restaurants {
+    padding: 30px 180px;
+    gap: 28px;
+  }
+}
+.section-restaurants .restaurants {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+@media (min-width: 1024px) {
+  .section-restaurants .restaurants {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 100px;
+  }
+}
+.section-restaurants .restaurants .restaurant {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -185,12 +238,17 @@ footer a {
   /* Shadow/Card */
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
 }
-.restaurants .restaurant img {
+@media (min-width: 1024px) {
+  .section-restaurants .restaurants .restaurant {
+    flex: 1 0 45%;
+  }
+}
+.section-restaurants .restaurants .restaurant img {
   object-fit: cover;
   border-radius: 15px 15px 0 0;
   height: 230px;
 }
-.restaurants .restaurant .new {
+.section-restaurants .restaurants .restaurant .new {
   position: absolute;
   display: flex;
   align-items: center;
@@ -205,19 +263,19 @@ footer a {
   font-family: Roboto;
   font-size: 14px;
 }
-.restaurants .restaurant .restaurant-info {
+.section-restaurants .restaurants .restaurant .restaurant-info {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: 16px 25px;
 }
-.restaurants .restaurant .restaurant-info .restaurant-text {
+.section-restaurants .restaurants .restaurant .restaurant-info .restaurant-text {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-.restaurants .restaurant button {
+.section-restaurants .restaurants .restaurant button {
   color: #000;
   border: 0;
   background: none;
@@ -238,6 +296,12 @@ footer a {
   gap: 40px;
   position: relative;
 }
+@media (min-width: 1024px) {
+  .carte {
+    margin: 0 192px;
+    padding: 0 210px;
+  }
+}
 .carte .top-round {
   height: 40px;
   min-width: 100%;
@@ -252,6 +316,12 @@ footer a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+@media (min-width: 1024px) {
+  .carte .title {
+    justify-content: center;
+    gap: 24px;
+  }
 }
 .carte .title button {
   border: 0;

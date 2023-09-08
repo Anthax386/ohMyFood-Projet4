@@ -26,10 +26,15 @@
     gap: 27px;
     .section-title {
         width: 100%;
+
         .info-title {
             color: #000;
             text-align: center;
-        
+            @include respond-to('large') {
+                display: flex;
+                flex-direction: column;
+                gap: 18px;
+            }
             /* Section Title */
             font-family: Roboto;
             font-size: 24px;
@@ -62,112 +67,144 @@
     flex-direction: column;
     gap: 25px;
     padding: 58px 20px;
+    @include respond-to('large') {
+        padding: 50px 180px;
+    }
     .steps {
-        position: relative;
-        .steps-number {
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            background-color: $primary;
-            color: $white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-
-            top: 24px;
-            left: -12px;
-        }
-        .steps-name {
+        @include respond-to('large') {
             display: flex;
             flex-direction: row;
-            align-items: center;
-            gap: 27px;
-            padding: 0 40px;
-            height: 72PX;
-
-            border-radius: 20px;
-            background-color: $background;
-
-            /* Shadow/Instructions */
-            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-
-
-            color: #000;
-            font-family: Roboto;
-            font-size: 16px;
-            i {
-                color: $fontawesome-grey;
+            gap: 35px;
+        }
+        .step {
+            position: relative;
+            @include respond-to('large') {
+                width: 33%;
             }
-            .primary-color {
-                color: $primary;
+            .steps-number {
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                background-color: $primary;
+                color: $white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+    
+                top: 24px;
+                left: -12px;
+            }
+            .steps-name {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 27px;
+                padding: 0 40px;
+                height: 72PX;
+    
+                border-radius: 20px;
+                background-color: $background;
+    
+                /* Shadow/Instructions */
+                box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    
+    
+                color: #000;
+                font-family: Roboto;
+                font-size: 16px;
+                i {
+                    color: $fontawesome-grey;
+                }
+                .primary-color {
+                    color: $primary;
+                }
             }
         }
+        
     }
 }
-.restaurants {
+.section-restaurants {
     display: flex;
     flex-direction: column;
     padding: 60px 18px;
     gap: 18px;
 
     background: $background;
-    .restaurant {
-        position: relative;
-
+    @include respond-to('large') {
+        padding: 30px 180px;
+        gap: 28px;
+    }
+    .restaurants {
         display: flex;
         flex-direction: column;
+        gap: 18px;
 
-        border-radius: 15px;
-        background: #fff;
-
-        color: inherit;
-        text-decoration: none;
-    
-        /* Shadow/Card */
-        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
-        img {
-            object-fit: cover;
-            border-radius: 15px 15px 0 0;
-            height: 230px;
-        }
-        .new {
-            position: absolute;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            top: 15px;
-            right: 15px;
-
-            height: 29px;
-            width: 80px;
-
-            border-radius: 2px;
-
-            background: $green;
-            color: $greenFont;
-
-            font-family: Roboto;
-            font-size: 14px;
-        }
-        .restaurant-info {
-            display: flex;
+        @include respond-to('large') {
             flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-            padding: 16px 25px ;
-            .restaurant-text {
+            flex-wrap: wrap;
+            gap: 100px;
+        }
+        .restaurant {
+            position: relative;
+    
+            display: flex;
+            flex-direction: column;
+    
+            border-radius: 15px;
+            background: #fff;
+    
+            color: inherit;
+            text-decoration: none;
+        
+            /* Shadow/Card */
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+            @include respond-to('large') {
+                flex: 1 0 45%
+            }
+            img {
+                object-fit: cover;
+                border-radius: 15px 15px 0 0;
+                height: 230px;
+            }
+            .new {
+                position: absolute;
                 display: flex;
-                flex-direction: column;
-                gap: 5px;
+                align-items: center;
+                justify-content: center;
+    
+                top: 15px;
+                right: 15px;
+    
+                height: 29px;
+                width: 80px;
+    
+                border-radius: 2px;
+    
+                background: $green;
+                color: $greenFont;
+    
+                font-family: Roboto;
+                font-size: 14px;
+            }
+            .restaurant-info {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                padding: 16px 25px ;
+                .restaurant-text {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                }
+            }
+            button {
+                color: #000;
+                border: 0;
+                background: none;
+                padding: 0;
             }
         }
-        button {
-            color: #000;
-            border: 0;
-            background: none;
-            padding: 0;
-        }
-    }
+    }   
 }
