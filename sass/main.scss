@@ -5,10 +5,16 @@
 
 // components
 @import 'components/button.scss';
+@import 'components/titles.scss';
 
 //layout
 @import 'layout/page.scss';
 @import 'layout/header.scss';
+@import 'layout/footer.scss';
 
 //pages
 @import 'pages/home.scss';
+@import 'pages/restaurants.scss';
+
+//google font
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
