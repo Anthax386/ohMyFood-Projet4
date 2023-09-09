@@ -71,6 +71,9 @@
         padding: 50px 180px;
     }
     .steps {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
         @include respond-to('large') {
             display: flex;
             flex-direction: row;
