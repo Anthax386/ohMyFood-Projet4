@@ -56,6 +56,7 @@
         display: flex;
         flex-direction: column;
         gap: 12px;
+        
         .menu-title {
             display: flex;
             flex-direction: column;
@@ -71,31 +72,68 @@
         .menu-card {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
-
             border-radius: 15px;
-            padding: 15px;
+            
             background: #fff;
             box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
 
             font-family: Roboto;
-
-            h4 {
-                font-size: 18px;
-                font-weight: 500;
-            }
-            p {
-                font-size: 15px;
-                font-weight: 300;
-            }
-            .menu-price {
+            height: 69px;
+            
+            position: relative;
+            .menu-noCheck {
                 display: flex;
-                flex-direction: column;
-                justify-content: flex-end;
-                p {
-                    font-weight: 700;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+                transition: all 500ms;
+                .menu-text {
+                    padding: 15px;
+                    h4 {
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+                    p {
+                        font-size: 15px;
+                        font-weight: 300;
+                    }
                 }
+                .menu-price {
+                    padding: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    p {
+                        font-weight: 700;
+                    }
+                }
+            }            
+            &:hover {
+                .menu-noCheck{
+                    padding-right: 59px;
+                }
+                .check {                                                          
+                    right: 0;
+                    opacity: 1;          
+                } 
             }
+            .check {
+                position: absolute;
+                right: -59px;
+                opacity: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 59px;
+                background-color: $green;
+                height: 69px;
+                transition: all 500ms;
+                border-radius: 0 15px 15px 0;
+                i {
+                    color: #fff;
+                } 
+            }
+            
         }
     }
     .btn {
