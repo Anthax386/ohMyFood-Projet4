@@ -78,9 +78,10 @@
             box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
 
             font-family: Roboto;
-            height: 69px;
+            height: fit-content;
             
             position: relative;
+            overflow: hidden;
             .menu-noCheck {
                 display: flex;
                 flex-direction: row;
@@ -113,27 +114,24 @@
                     padding-right: 59px;
                 }
                 .check {                                                          
-                    right: 0;
-                    opacity: 1;          
+                    right: 0;                   
                 } 
             }
             .check {
                 position: absolute;
-                right: -59px;
-                opacity: 0;
+                right: -59px;                
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 width: 59px;
                 background-color: $green;
-                height: 69px;
+                height: 100%;
                 transition: all 500ms;
                 border-radius: 0 15px 15px 0;
                 i {
                     color: #fff;
                 } 
-            }
-            
+            }            
         }
     }
     .btn {
