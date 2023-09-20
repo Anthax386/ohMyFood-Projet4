@@ -24,7 +24,7 @@
         left: 0;
         background: $background;
         border-radius: 40px 40px 0 0;
-        
+
     }
     .title {
         display: flex;
@@ -56,7 +56,7 @@
         display: flex;
         flex-direction: column;
         gap: 12px;
-        
+
         .menu-title {
             display: flex;
             flex-direction: column;
@@ -68,18 +68,18 @@
                 background: $green;
             }
         }
-        
+
         .menu-card {
             display: flex;
             flex-direction: row;
             border-radius: 15px;
-            
+
             background: #fff;
             box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
 
             font-family: Roboto;
             height: fit-content;
-            
+
             position: relative;
             overflow: hidden;
             .menu-noCheck {
@@ -87,7 +87,7 @@
                 flex-direction: row;
                 justify-content: space-between;
                 width: 100%;
-                transition: all 500ms;
+                transition: all 500ms ease-in-out;
                 .menu-text {
                     padding: 15px;
                     h4 {
@@ -108,30 +108,30 @@
                         font-weight: 700;
                     }
                 }
-            }            
+            }
             &:hover {
                 .menu-noCheck{
                     padding-right: 59px;
                 }
-                .check {                                                          
-                    right: 0;                   
-                } 
+                .check {
+                    right: 0;
+                }
             }
             .check {
                 position: absolute;
-                right: -59px;                
+                right: -59px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 width: 59px;
                 background-color: $green;
                 height: 100%;
-                transition: all 500ms;
+                transition: all 500ms ease-in-out;
                 border-radius: 0 15px 15px 0;
                 i {
                     color: #fff;
-                } 
-            }            
+                }
+            }
         }
     }
     .btn {
