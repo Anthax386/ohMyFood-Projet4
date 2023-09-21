@@ -5,7 +5,7 @@
 }
 .carte {
     background: $background;
-    padding: 0 13px;
+    padding: 0 17px;
 
     display: flex;
     flex-direction: column;
@@ -31,17 +31,15 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        position: relative;
         @include respond-to('large'){
             justify-content: center;
             gap: 24px;
         }
 
-        button {
-            border: 0;
-            background: none;
-            padding: 0;
-            margin: 0;
-            margin-right: 24px;
+        .like-btn{
+            position: absolute;
+            right: 41px;
         }
     }
 

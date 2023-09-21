@@ -158,7 +158,7 @@
             background: #fff;
 
             /* Shadow/Card */
-            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);            
             a {
                 color: inherit;
                 text-decoration: none;
@@ -199,24 +199,12 @@
             }
             @include respond-to('large') {
                 flex: 1 0 45%
-            }
-            
-            svg {
-            
-                position: relative;
+            }  
+            .like-btn {
                 position: absolute;
-                right: 25px;
-                bottom: 30px;
-                .color {
-                    visibility: hidden;
-                }
-                &:hover {
-                    .color {
-                        visibility: visible;
-                    }
-                }
-                
-            }
+                right: 15px;
+                bottom: 15px;
+            }                                                        
         }
     }   
 }

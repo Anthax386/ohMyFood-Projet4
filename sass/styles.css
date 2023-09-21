@@ -15,16 +15,34 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  transition: all 500ms ease-in-out;
 }
 .btn:hover {
-  border-radius: 25px;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+}
+
+.like-btn {
+  font-size: 1.25em;
+  color: transparent;
+  width: fit-content;
+  background: transparent;
+  -webkit-text-stroke: 1px black;
+  -webkit-background-clip: text;
+  opacity: 0.2;
+  transition: all 1000ms ease-in-out;
+}
+.like-btn:hover {
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 0 transparent;
+  opacity: 1;
 }
 
 h1, h2, h3, h4, p {
   padding: 0;
   margin: 0;
+  font-family: Roboto;
 }
 
 body {
@@ -294,17 +312,10 @@ footer .footer-links a {
     flex: 1 0 45%;
   }
 }
-.section-restaurants .restaurants .restaurant svg {
-  position: relative;
+.section-restaurants .restaurants .restaurant .like-btn {
   position: absolute;
-  right: 25px;
-  bottom: 30px;
-}
-.section-restaurants .restaurants .restaurant svg .color {
-  visibility: hidden;
-}
-.section-restaurants .restaurants .restaurant svg:hover .color {
-  visibility: visible;
+  right: 15px;
+  bottom: 15px;
 }
 
 .header-img {
@@ -315,7 +326,7 @@ footer .footer-links a {
 
 .carte {
   background: #F6F6F6;
-  padding: 0 13px;
+  padding: 0 17px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -341,6 +352,7 @@ footer .footer-links a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 @media (min-width: 1024px) {
   .carte .title {
@@ -348,12 +360,9 @@ footer .footer-links a {
     gap: 24px;
   }
 }
-.carte .title button {
-  border: 0;
-  background: none;
-  padding: 0;
-  margin: 0;
-  margin-right: 24px;
+.carte .title .like-btn {
+  position: absolute;
+  right: 41px;
 }
 .carte h2 {
   font-family: Shrikhand;
