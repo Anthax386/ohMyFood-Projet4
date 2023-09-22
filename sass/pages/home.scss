@@ -189,22 +189,23 @@
                     font-family: Roboto;
                     font-size: 14px;
                 }
-                                        
-                .restaurant-text {
+                .restaurant-bas {
                     display: flex;
-                    flex-direction: column;
-                    gap: 5px;
-                    padding: 16px 25px ;
-                }
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    .restaurant-text {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+                        padding: 16px 25px ;
+                    }
+                }                                                        
             }
             @include respond-to('large') {
                 flex: 1 0 45%
             }  
-            .like-btn {
-                position: absolute;
-                right: 15px;
-                bottom: 15px;
-            }                                                        
+                                                                  
         }
     }   
 }
