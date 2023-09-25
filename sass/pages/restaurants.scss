@@ -31,15 +31,11 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        position: relative;
+        padding-right: 40px;
         @include respond-to('large'){
             justify-content: center;
             gap: 24px;
-        }
-
-        .like-btn{
-            position: absolute;
-            right: 41px;
+            padding-right: 0;
         }
     }
 
