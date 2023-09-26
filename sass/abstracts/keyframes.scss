@@ -1,0 +1,26 @@
+@keyframes loader {
+    0% {
+        transform: scaleX(0);
+    }
+    20% {
+        transform: scaleX(0.35);
+    }
+    55% {
+        transform: scaleX(0.6);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+@keyframes loader-container {
+    0% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}

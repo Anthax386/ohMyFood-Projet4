@@ -1,4 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@keyframes loader {
+  0% {
+    transform: scaleX(0);
+  }
+  20% {
+    transform: scaleX(0.35);
+  }
+  55% {
+    transform: scaleX(0.6);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes loader-container {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
 .btn {
   height: 50px;
   width: 218px;
@@ -71,38 +97,39 @@ h1, h2, h3, h4, p {
   font-family: Roboto;
 }
 
+.loader {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: fixed;
+  background: white;
+  left: 0;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  animation: loader-container 5s;
+  animation-fill-mode: forwards;
+}
 .loader h1 {
   position: relative;
   text-align: center;
   font-family: Shrikhand;
-  color: transparent;
-  background: linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  animation: all 2s ease-in-out;
-}
-.loader h1::before {
-  content: "";
-  width: 100%;
-  height: 5px;
-  border: black 0.02em solid;
-  border-radius: 5px;
-  box-shadow: 2px 2px 2px #FF79DA;
-  position: absolute;
-  left: 0;
-  bottom: -4px;
+  color: black;
+  width: fit-content;
 }
 .loader h1::after {
   content: "";
   position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 0;
+  left: 1px;
+  bottom: -3px;
   height: 5px;
   border-radius: 5px;
-  background-color: black;
-}
-.loader h1:hover::after {
+  background: linear-gradient(90deg, #9356DC, #FF79DA);
   width: 100%;
+  transform: scaleX(0);
+  transform-origin: 0% 50%;
+  animation: loader 4s;
 }
 
 body {
@@ -428,7 +455,6 @@ footer .footer-links a {
 .carte .menu {
   font-family: Roboto;
   font-size: 16px;
-  text-transform: uppercase;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -437,6 +463,7 @@ footer .footer-links a {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  text-transform: uppercase;
 }
 .carte .menu .menu-title .green-bar {
   height: 3px;
