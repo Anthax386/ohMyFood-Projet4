@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     height: 50px;
     width: 218px;
     
@@ -27,6 +27,7 @@
     position: relative;
     z-index: 1;
     &:hover {
+        cursor: pointer;
         &::after{
             opacity: 1;
         }
@@ -57,6 +58,7 @@
 
     position: relative;
     &:hover {
+        cursor: pointer;
         &::before {
             opacity: 0;
         }

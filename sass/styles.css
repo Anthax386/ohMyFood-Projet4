@@ -57,6 +57,9 @@
   position: relative;
   z-index: 1;
 }
+.btn:hover {
+  cursor: pointer;
+}
 .btn:hover::after {
   opacity: 1;
 }
@@ -79,6 +82,9 @@
   z-index: 1;
   width: fit-content;
   position: relative;
+}
+.like-btn:hover {
+  cursor: pointer;
 }
 .like-btn:hover::before {
   opacity: 0;
@@ -587,6 +593,9 @@ footer .footer-links a {
 }
 .carte .menu .menu-card .menu-noCheck .menu-price p {
   font-weight: 700;
+}
+.carte .menu .menu-card:hover {
+  cursor: pointer;
 }
 .carte .menu .menu-card:hover .menu-noCheck {
   padding-right: 59px;
