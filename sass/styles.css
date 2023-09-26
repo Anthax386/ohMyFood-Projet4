@@ -25,6 +25,16 @@
     display: none;
   }
 }
+@keyframes card-in {
+  0% {
+    scale: 0;
+    opacity: 0;
+  }
+  100% {
+    scale: 1;
+    opacity: 1;
+  }
+}
 .btn {
   height: 50px;
   width: 218px;
@@ -480,6 +490,72 @@ footer .footer-links a {
   height: fit-content;
   position: relative;
   overflow: hidden;
+  opacity: 0;
+  animation: card-in 500ms;
+  animation-fill-mode: forwards;
+}
+.carte .menu .menu-card:nth-child(1) {
+  animation-delay: 50ms;
+}
+.carte .menu .menu-card:nth-child(2) {
+  animation-delay: 100ms;
+}
+.carte .menu .menu-card:nth-child(3) {
+  animation-delay: 150ms;
+}
+.carte .menu .menu-card:nth-child(4) {
+  animation-delay: 200ms;
+}
+.carte .menu .menu-card:nth-child(5) {
+  animation-delay: 250ms;
+}
+.carte .menu .menu-card:nth-child(6) {
+  animation-delay: 300ms;
+}
+.carte .menu .menu-card:nth-child(7) {
+  animation-delay: 350ms;
+}
+.carte .menu .menu-card:nth-child(8) {
+  animation-delay: 400ms;
+}
+.carte .menu .menu-card:nth-child(9) {
+  animation-delay: 450ms;
+}
+.carte .menu .menu-card:nth-child(10) {
+  animation-delay: 500ms;
+}
+.carte .menu .menu-card:nth-child(11) {
+  animation-delay: 550ms;
+}
+.carte .menu .menu-card:nth-child(12) {
+  animation-delay: 600ms;
+}
+.carte .menu .menu-card:nth-child(13) {
+  animation-delay: 650ms;
+}
+.carte .menu .menu-card:nth-child(14) {
+  animation-delay: 700ms;
+}
+.carte .menu .menu-card:nth-child(15) {
+  animation-delay: 750ms;
+}
+.carte .menu .menu-card:nth-child(16) {
+  animation-delay: 800ms;
+}
+.carte .menu .menu-card:nth-child(17) {
+  animation-delay: 850ms;
+}
+.carte .menu .menu-card:nth-child(18) {
+  animation-delay: 900ms;
+}
+.carte .menu .menu-card:nth-child(19) {
+  animation-delay: 950ms;
+}
+.carte .menu .menu-card:nth-child(20) {
+  animation-delay: 1000ms;
+}
+.carte .menu .menu-card:nth-child(21) {
+  animation-delay: 1050ms;
 }
 .carte .menu .menu-card .menu-noCheck {
   display: flex;
