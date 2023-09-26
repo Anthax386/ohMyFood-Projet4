@@ -77,9 +77,9 @@
             position: relative;
             overflow: hidden;
             opacity: 0;          
-            @for $i from 1 through 21{
+            @for $i from 1 through 5{
                 &:nth-child(#{$i}){
-                  animation-delay: $i * 50ms;
+                  animation-delay: $i * 100ms;
                 }
             }
             animation: card-in 500ms;
