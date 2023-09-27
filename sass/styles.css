@@ -533,24 +533,20 @@ footer .footer-links a {
   left: 15px;
   top: 15px;
   bottom: 15px;
-  text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden;
   transition: all 500ms ease-in-out;
-  max-width: 100%;
+  max-width: 78%;
 }
 .carte .menu .menu-card .menu-noCheck .menu-text h4 {
   font-size: 18px;
   font-weight: 500;
   text-overflow: ellipsis;
-  white-space: nowrap;
   overflow: hidden;
 }
 .carte .menu .menu-card .menu-noCheck .menu-text p {
   font-size: 15px;
   font-weight: 300;
   text-overflow: ellipsis;
-  white-space: nowrap;
   overflow: hidden;
 }
 .carte .menu .menu-card .menu-noCheck .menu-price {
@@ -559,6 +555,7 @@ footer .footer-links a {
   right: 15px;
   transform: translatex(0);
   transition: all 500ms ease-in-out;
+  max-width: 15%;
 }
 .carte .menu .menu-card .menu-noCheck .menu-price p {
   font-weight: 700;
@@ -568,7 +565,6 @@ footer .footer-links a {
 }
 .carte .menu .menu-card:hover .menu-text {
   max-width: 60%;
-  transform-origin: left 0;
 }
 .carte .menu .menu-card:hover .menu-price {
   transform: translateX(-59px);
