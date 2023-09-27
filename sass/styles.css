@@ -501,71 +501,24 @@ footer .footer-links a {
   position: relative;
   overflow: hidden;
   opacity: 0;
+  height: 70px;
   animation: card-in 500ms;
   animation-fill-mode: forwards;
 }
 .carte .menu .menu-card:nth-child(1) {
-  animation-delay: 50ms;
-}
-.carte .menu .menu-card:nth-child(2) {
   animation-delay: 100ms;
 }
-.carte .menu .menu-card:nth-child(3) {
-  animation-delay: 150ms;
-}
-.carte .menu .menu-card:nth-child(4) {
+.carte .menu .menu-card:nth-child(2) {
   animation-delay: 200ms;
 }
-.carte .menu .menu-card:nth-child(5) {
-  animation-delay: 250ms;
-}
-.carte .menu .menu-card:nth-child(6) {
+.carte .menu .menu-card:nth-child(3) {
   animation-delay: 300ms;
 }
-.carte .menu .menu-card:nth-child(7) {
-  animation-delay: 350ms;
-}
-.carte .menu .menu-card:nth-child(8) {
+.carte .menu .menu-card:nth-child(4) {
   animation-delay: 400ms;
 }
-.carte .menu .menu-card:nth-child(9) {
-  animation-delay: 450ms;
-}
-.carte .menu .menu-card:nth-child(10) {
+.carte .menu .menu-card:nth-child(5) {
   animation-delay: 500ms;
-}
-.carte .menu .menu-card:nth-child(11) {
-  animation-delay: 550ms;
-}
-.carte .menu .menu-card:nth-child(12) {
-  animation-delay: 600ms;
-}
-.carte .menu .menu-card:nth-child(13) {
-  animation-delay: 650ms;
-}
-.carte .menu .menu-card:nth-child(14) {
-  animation-delay: 700ms;
-}
-.carte .menu .menu-card:nth-child(15) {
-  animation-delay: 750ms;
-}
-.carte .menu .menu-card:nth-child(16) {
-  animation-delay: 800ms;
-}
-.carte .menu .menu-card:nth-child(17) {
-  animation-delay: 850ms;
-}
-.carte .menu .menu-card:nth-child(18) {
-  animation-delay: 900ms;
-}
-.carte .menu .menu-card:nth-child(19) {
-  animation-delay: 950ms;
-}
-.carte .menu .menu-card:nth-child(20) {
-  animation-delay: 1000ms;
-}
-.carte .menu .menu-card:nth-child(21) {
-  animation-delay: 1050ms;
 }
 .carte .menu .menu-card .menu-noCheck {
   display: flex;
@@ -573,23 +526,39 @@ footer .footer-links a {
   justify-content: space-between;
   width: 100%;
   transition: all 500ms ease-in-out;
+  gap: 15px;
 }
 .carte .menu .menu-card .menu-noCheck .menu-text {
-  padding: 15px;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  bottom: 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: all 500ms ease-in-out;
+  max-width: 100%;
 }
 .carte .menu .menu-card .menu-noCheck .menu-text h4 {
   font-size: 18px;
   font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .carte .menu .menu-card .menu-noCheck .menu-text p {
   font-size: 15px;
   font-weight: 300;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .carte .menu .menu-card .menu-noCheck .menu-price {
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  transform: translatex(0);
+  transition: all 500ms ease-in-out;
 }
 .carte .menu .menu-card .menu-noCheck .menu-price p {
   font-weight: 700;
@@ -597,8 +566,12 @@ footer .footer-links a {
 .carte .menu .menu-card:hover {
   cursor: pointer;
 }
-.carte .menu .menu-card:hover .menu-noCheck {
-  padding-right: 59px;
+.carte .menu .menu-card:hover .menu-text {
+  max-width: 60%;
+  transform-origin: left 0;
+}
+.carte .menu .menu-card:hover .menu-price {
+  transform: translateX(-59px);
 }
 .carte .menu .menu-card:hover .check {
   right: 0;
@@ -609,7 +582,7 @@ footer .footer-links a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 59px;
+  min-width: 59px;
   background-color: #99E2D0;
   height: 100%;
   transition: all 500ms ease-in-out;
