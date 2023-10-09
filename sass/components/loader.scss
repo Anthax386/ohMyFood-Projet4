@@ -11,24 +11,13 @@
     z-index: 2;
     animation: loader-container 5s;
     animation-fill-mode: forwards;
-    h1{
+    p{
         position: relative;
         text-align: center;
         font-family: Shrikhand;
         color: black;
 
         width: fit-content;
-        
-        //  &::before {
-        //      content: '';
-        //      width: 100%;
-        //      height: 5px;
-        //      border: black 0.02em solid;
-        //      border-radius: 5px;
-        //      position: absolute;
-        //      left: 0;
-        //      bottom: -4px;
-        // }
         &::after {
             content: '';
             position: absolute;
