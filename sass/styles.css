@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.google.com/specimen/Roboto");
 @keyframes loader {
   0% {
     transform: scaleX(0);
@@ -131,14 +132,14 @@ h1, h2, h3, h4, p {
   animation: loader-container 5s;
   animation-fill-mode: forwards;
 }
-.loader h1 {
+.loader h2 {
   position: relative;
   text-align: center;
   font-family: Shrikhand;
   color: black;
   width: fit-content;
 }
-.loader h1::after {
+.loader h2::after {
   content: "";
   position: absolute;
   left: 1px;
